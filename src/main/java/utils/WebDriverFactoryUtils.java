@@ -53,7 +53,7 @@ public class WebDriverFactoryUtils {
         osSuffix = "win64.exe";
         break;
       case LINUX:
-        osSuffix = "limux64";
+        osSuffix = "linux64";
         break;
       case MAC:
         osSuffix = "mac64";
@@ -76,7 +76,7 @@ public class WebDriverFactoryUtils {
         osSuffix = "win64.exe";
         break;
       case LINUX:
-        osSuffix = "limux64";
+        osSuffix = "linux64";
         break;
       case MAC:
         osSuffix = "mac64";
