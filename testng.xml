@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test task">
+  <test name="Addult Test">
+    <classes>
+      <class name="adulttest.AdultTest"></class>
+    </classes>
+  </test>
+  <test name="Search Test">
+    <classes>
+      <class name="searchtests.GoogleTest"></class>
+    </classes>
+  </test>
+</suite>

@@ -14,7 +14,7 @@ public class ResultPage extends BasePage {
 
   public ResultPage(WebDriver driver) {
     super(driver);
-    PageFactory.initElements(driver, this);
+    PageFactory.initElements(this.driver, this);
   }
 
   public boolean isResultStatPresent() {

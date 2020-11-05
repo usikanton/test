@@ -4,28 +4,31 @@ import model.pages.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import utils.Properties;
 import utils.WebDriverFactoryUtils;
 
 public class BaseTest {
 
-  public static final String BASE_URL = "https://google.com";
   protected HomePage homePage;
   protected WebDriver driver;
 
-  @BeforeTest
+  @BeforeTest(alwaysRun = true)
   public void getStarted() {
-    try {
-      driver = WebDriverFactoryUtils.initDriver();
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-    driver.get(BASE_URL);
-    homePage = new HomePage(driver);
+    driver = WebDriverFactoryUtils.initDriver();
+    openHomePage();
   }
 
-  @AfterTest
+  @AfterTest(alwaysRun = true)
   public void tearDown() {
-    driver.close();
-    driver.quit();
+    if (this.driver != null) {
+      driver.close();
+      driver.quit();
+    }
+  }
+
+  private void openHomePage() {
+    driver.manage().window().maximize();
+    driver.get(Properties.get("base.url"));
+    homePage = new HomePage(driver);
   }
 }

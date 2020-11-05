@@ -7,10 +7,11 @@ public class HomePage extends BasePage {
 
   public HomePage(WebDriver driver) {
     super(driver);
-    PageFactory.initElements(driver, this);
+    PageFactory.initElements(this.driver, this);
   }
 
   public ResultPage makeSearch(String query) {
+    searchInput.click();
     searchInput.sendKeys(query);
     searchInput.submit();
     return new ResultPage(driver);

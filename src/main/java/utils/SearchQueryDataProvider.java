@@ -6,6 +6,6 @@ public class SearchQueryDataProvider {
 
   @DataProvider(name = "getSearchQueryData")
   public Object[][] getSearchQueryData() {
-    return new Object[][]{{"NASA"}, {"Christian Bale"}};
+    return new Object[][]{{"NASA", "Поиск"}, {"Christian Bale", "Шукаць"}};
   }
 }
