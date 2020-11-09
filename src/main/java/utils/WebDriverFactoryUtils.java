@@ -1,7 +1,5 @@
 package utils;
 
-import java.util.Locale;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,7 +12,6 @@ public class WebDriverFactoryUtils {
   private static final String GECKO_DRIVER_PROPERTY = "webdriver.gecko.driver";
   private static final String CHROME_DRIVER_PROPERTY = "webdriver.chrome.driver";
   public static final String EDGE_DRIVER_PROPERTY = "webdriver.edge.driver";
-  private static String osSuffix;
 
   public static WebDriver initDriver() {
     String browser = System.getProperty("browser");
