@@ -1,4 +1,4 @@
- Download webdriver executables first and specify their paths into __service.properties__ file respectively.
+ Download webdriver executables first and specify their paths into __service.properties__ (src/main/resources/service.properties) file respectively.
  
  Command for run:
  
