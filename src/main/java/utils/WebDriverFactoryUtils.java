@@ -42,7 +42,6 @@ public class WebDriverFactoryUtils {
   private static WebDriver initChromeDriver() {
     ChromeOptions chromeOptions = new ChromeOptions();
     chromeOptions.addArguments("disable-infobars");
-    chromeOptions.addArguments();
     System.setProperty(CHROME_DRIVER_PROPERTY, Properties.get("chrome.driver"));
     return new ChromeDriver();
   }
