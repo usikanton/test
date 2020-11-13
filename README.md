@@ -1,7 +1,7 @@
+ Download webdriver executables first and specify their paths into __service.properties__ file respectively.
+ 
  Command for run:
  
- **mvn clean test -Dbrowser=[chrome,firefox]**
+ **mvn clean test -Dbrowser=[chrome,firefox,edge]**
  
- Variable "browser" accepts values 'chrome' and 'firefox' to run tests in Google Chrome and Firefox browsers respectively.
- 
- _NOTE_: double-check that all driver executable files have appropriate permissions for running. 
+ Variable "browser" accepts values 'chrome' and 'firefox' to run tests in Google Chrome, Firefox and MS Edge browsers respectively. 
